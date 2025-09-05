@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student details page with lists, tables, media, and an HTML5 form.">
+    <title>Student Details - Enhanced Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Student Information Portal</h1>
+        <p>A simple HTML5 page showcasing lists, tables, media, and a validated student registration form.</p>
+    </header>
+
+    <main>
+
+        <!-- Objectives List -->
+        <section>
+            <h2>Objectives</h2>
+            <ul>
+                <li>Use lists and tables effectively to organize student data.</li>
+                <li>Embed media content such as student images, audio, or video.</li>
+                <li>Build a structured HTML5 form for student registration.</li>
+                <li>Apply HTML5 form attributes to improve usability.</li>
+                <li>Use built-in validation to reduce incorrect input without JavaScript.</li>
+            </ul>
+        </section>
+
+        <!-- Table Section -->
+        <section>
+            <h2>Student Details</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Full Name</th>
+                        <th>Age</th>
+                        <th>Course</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Alice Oloo</td>
+                        <td>20</td>
+                        <td>Computer Science</td>
+                        <td>alice@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Edgar Bright/td>
+                        <td>22</td>
+                        <td>Electrical Engineering</td>
+                        <td>bright@yahoo.com</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Clara Lee</td>
+                        <td>21</td>
+                        <td>Business Management</td>
+                        <td>clara@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>104</td>
+                        <td>David Kim</td>
+                        <td>23</td>
+                        <td>Information Technology</td>
+                        <td>david@yahoo.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Media Section -->
+        
+            <h1>Image ,Video and Audio section</h1>
+      <h1> Sample Image</h1>
+  <img src="https://images.pexels.com/photos/159775/library-la-trobe-study-students-159775.jpeg" height="200" width ="200" alt="Student group photo">
+               
+           
+
+         <h1>Sample audio</h1>
+            <audio>
+                <source src="https://audiojungle.net/item/uplifting-inspirational-background/59244658" height="200" width ="200" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h1>Sample video</h1>
+            <video controls width="320">
+                <source src="https://www.pexels.com/download/video/3209298/" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        
+
+        <!-- Form Section -->
+        
+            <h1>Student Registration Form</h1>
+            <form action="#" method="post" >
+<section>
+                <!-- Personal Information -->
+                
+                    <h1>Personal Information</h1>
+
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter full name" required minlength="3"><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" required><br><br>
+
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" 
+                           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+                
+</section>
+                <!-- Academic Details -->
+               
+                    <h1>Academic Details</h1>
+
+                    <label for="studentid">Student ID:</label><br>
+                    <input type="text" id="studentid" name="studentid" placeholder="e.g., 105" required pattern="[0-9]{3}"><br><br>
+
+                    <label for="course">Course:</label><br>
+                    <select id="course" name="course" required>
+                        <option value="">--Select a course--</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="ee">Electrical Engineering</option>
+                        <option value="bm">Business Management</option>
+                        <option value="it">Information Technology</option>
+                    </select><br><br>
+
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" id="dob" name="dob" required><br><br>
+                
+
+                
+
+                <!-- Submit -->
+                <input type="submit" value="Register">
+            </form>
+        
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Student Information Portal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
